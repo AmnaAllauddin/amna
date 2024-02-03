@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 20px;}
+            .container{
+            
+                margin-left:3%;
+                border-style: inset;
+
+                margin-top: 0.5%;
+            }
+           
+            label{
+                margin-right: 3% ;
+            }
+            button{
+                margin-top: 0.5%;
+            }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Customer</legend>
+            <label for="Name">Name<sup style="color: red;">*</sup></label>
+        <input class="container" type="text" name="Name"><br>
+        <label for="Email">Email<sup style="color: red;">*</sup></label>
+        <input class="container" type="email" name="Email" restrication="restrication"><br>
+        <label for="Investment">Investment</label>
+        <select style="width: 175px;margin-left: 1.3%;" class="container" name="Investment"><option></option><option>10000</option><option>20000</option><option>30000</option><option>40000</option>
+        <option>50000</option></select><br>
+        <label for="Jioned Date">Jioned Date<sup style="color: red;">*</sup></label>
+        <input style="margin-left: 0.5%;" class="container"type="number" name="Jioned Date"><img src="./icons8-tear-off-calendar-48.png" alt="calender"><br>
+        <label for="Active">Active</label>
+       <input  class="container"type="checkbox" name="Active" id="Active">   
+        </fieldset>
+        <BUtton>OK</BUtton><BUtton style="margin-left: 1%;">Cancel</BUtton>
+    </form>
+</body>
+</html>
