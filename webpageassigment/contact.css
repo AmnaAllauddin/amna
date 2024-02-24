@@ -1,0 +1,35 @@
+body{
+    background-color: #36363E;
+    margin: 15%;
+    overflow-y: hidden;
+   
+    }
+   .div1{
+      height: 50%;
+      width: 25%;
+      color: white;
+      margin:2%;
+        display: inline-table;
+    }
+    .div2{
+      height: 50%;
+      width: 25%;
+      color: white;
+      margin:2%;
+     display: inline-table;
+       height:60%;
+       padding: 5%;
+    }
+     img{
+        display: inline;
+        }
+    .div3{
+      height: 50%;
+      width: 25%;
+      color: white;
+      margin:2%;
+      display: inline-table;
+      padding:1%;
+      text-align:center;
+    }
+  
