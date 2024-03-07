@@ -1,12 +1,14 @@
-body{
+.timming{
     margin: 0%;
     background-image: url(./empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg);
     background-position:center; 
     background-repeat: no-repeat;
     background-size:  100%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     overflow-y: hidden;
     overflow-x: hidden;
+    height: 1100px;
+    width: auto;
 }
 .time{
 height:400px;
@@ -16,19 +18,33 @@ background-color:#E9EAEB;
 margin-left:15%;
 border-radius: 5%;
 }
-nav{
+#timmingnav{
     background-color:#F65B35;
-   width: 700px;
+   width: 623px;
     height: 50px;
     border-radius: 20px 20px 0px 0px;
     }
-h1{
-    font: size 50px;
-    padding: 1%;
+ #timmingh1{
+    font-size:50px;
+    padding:2px;
     text-align: center;
     font-weight: bolder;
 }
-p{
+#timmingp{
+    font-size:30px;
+   color:#A6A7A6 ;
+ text-align:center;
+ justify-content: space-between;
+ /* display: inline-block; */
+  }
+  #timmingp1{
+    font-size:30px;
+   color:#A6A7A6 ;
+ text-align:center;
+ justify-content: space-between;
+ /* display: inline-block; */
+  }
+  #timmingp2{
     font-size:30px;
    color:#A6A7A6 ;
  text-align:center;

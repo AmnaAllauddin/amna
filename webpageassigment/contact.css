@@ -1,17 +1,19 @@
-body{
+.contact{
     background-color: #36363E;
-    margin: 15%;
     overflow-y: hidden;
+    overflow: hidden;
+    height: auto;
+    width: auto;
    
     }
-   .div1{
+   #contactdiv1{
       height: 50%;
       width: 25%;
       color: white;
       margin:2%;
         display: inline-table;
     }
-    .div2{
+    #contactdiv2{
       height: 50%;
       width: 25%;
       color: white;
@@ -23,7 +25,7 @@ body{
      img{
         display: inline;
         }
-    .div3{
+    #contactdiv3{
       height: 50%;
       width: 25%;
       color: white;

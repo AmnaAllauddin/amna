@@ -1,23 +1,24 @@
 *{
     margin: -0%;
     padding: 0%;}
- body{
+#body{
     background-image: url(./wood-sideboard-living-room-interior-with-copy-space.jpg);
     background-position:center; 
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    
+    /* background-attachment: fixed; */
     overflow-x: hidden;
+    overflow-y: hidden;
+    height: 1500px;
+    width:auto;
   }
  nav{
-
-    background-color:#f8f9fa;
+  background-color:#f8f9fa;
    height:90px;
    line-height:90px;
    width: 2133px;
    padding: 0px 40px;
-   /* position:fixed; */
+   /* positon:fixed; */
    } 
  nav .logo{
    font-size: 300%;
@@ -42,7 +43,7 @@
       }
     #text{
      padding:13% 20% 20% 30%;
-       position: fixed;
+       /* position: fixed; */
       } 
 #search{
         padding:1.5%;
@@ -52,10 +53,11 @@
         display: flex; 
          align-items: center;
         justify-content: center;
-        margin-left:30% ;
-       margin-top:27%;
+         margin-left:30% ;
+       /* margin-top:27%;  */
       border-radius:13px;
-    position:fixed;} 
+    /* position:fixed; */
+  } 
 form{
   display: inline;}
   input{

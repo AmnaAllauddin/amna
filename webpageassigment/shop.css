@@ -1,27 +1,52 @@
-body{
+#shop{
     margin:4%;
     overflow-y: hidden;
+    height:900px;
+    width: 10100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding:30px;
 }
-p{
+#shopp{
     color: #3AA35B;
     font-size: 20px;
     font-weight: bold;
 }
-h1{
+#shoph1{
     font-size:50px;
 }
-.images{
+#shopimages{
     display:inline-block;
 }
-img{
-border-radius: 5%;
+#shopimg{
+border-radius:5%;
 height:650px;
 }
-.text{
+#shopimg1{
+    border-radius:5%;
+    height:650px;
+    }
+    #shopimg2{
+        border-radius:5%;
+        height:650px;
+        }
+#shoptext{
     height: 700px;
     display: inline-block;
 }
-h2{
+#shoptext1{
+    height: 700px;
+    display: inline-block;
+}
+#shoph21{
+    font-size:40px;
+    text-align: center;
+}
+#shoph23{
+    font-size:40px;
+    text-align: center;
+}
+#shoph2{
     font-size:40px;
     text-align: center;
 }
