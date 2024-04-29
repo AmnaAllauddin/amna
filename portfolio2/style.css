@@ -1,0 +1,20 @@
+
+
+.vertical-line-md{
+    border-left: 10px solid rgb(245,168,65);
+    height: 0.5%;
+    margin-left: 30%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    overflow: hidden;
+}
+.container-fluid {
+    background-color: rgb(236, 242, 255);
+}
+img {
+    border-radius: 50px;
+   
+}

@@ -1,0 +1,39 @@
+body{
+    margin:0%;
+    padding:0%;
+   
+}
+
+ .container{
+    display:flex;
+    flex-direction: row;
+   margin: 0% 30%;
+   padding:1%;
+ }
+a{
+    text-decoration:none;
+    color:gray;
+    font: size 20px; 
+    margin: auto;
+}
+nav{
+    background-color: whitesmoke;
+    width:100%;
+    height:100%;
+   }
+.logo{
+float: left;
+display:flex;
+flex-direction: row;
+}
+a:hover{
+    color: rgb(185, 169, 202);
+    
+}
+.mode{
+  float: right;
+  display:flex;
+  flex-direction:row;
+  margin-top:-50px;
+  padding: 0.5%;
+  }
