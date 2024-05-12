@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  question no 1 sum of two numbers
+        let a
+        let b
+        a = Number(prompt("enter the value of a"))
+        b = Number(prompt("enter value of b"))
+        let sum = Number((a + b))
+        console.log("sum=", (sum))
+        // question 2 maximum number in a array
+        const array = [3, 4, 6, 6, 8, 9, 10]
+        let max = array[0]
+        for (let i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        console.log("maximum number in array is", max)
+        // question 3 palindrome
+        function palindrome(str) {
+                let re =/[^A-Za-z0–9]/g ;
+                str = str.toLowerCase().replace(re, "")
+                let reversedStr = str.split('').reverse().join('');
+                return str === reversedStr;
+        }
+        console.log( palindrome("nope"))
+        //  question 4 reverse of string
+        let string = "i am amna"
+        console.log("reverse of string is:", string.split("").reverse().join(""))
+        // question 5 even number from array
+        const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        for (let i = 0; i < array1.length; i++) {
+            if (array1[i] % 2 === 0) {
+                console.log("even number in a array is:", array1[i])
+            }
+        }
+        // question 6 factorial
+        let factolize = 0
+        function factorialize(number) {
+            if (number == 0 || number == 1) {
+                return 1
+            }
+            else {
+                factolize = number * factorialize(number - 1)
+                return factolize
+            }
+        }
+        factorialize(4)
+        console.log("factorize=", factolize)
+        // question 7 prime number
+        const number = parseInt(prompt("enter a number to check prime or not"))
+        let isPrime = true
+        if (number === 1) {
+            console.log("1 is neither prime number or not composite number")
+        }
+        else if (number > 1) {
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    isPrime = false
+                    break
+                }
+            }
+        }
+        if(isPrime){
+            console.log(number,"is a prime number")
+        }
+        else{
+            console.log(number,"is not a prime number")
+        }
+    </script>
+</body>
+
+</html>
