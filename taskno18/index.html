@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Question no 1
+        let car = {
+            color: "red",
+            model: "ferari",
+            year: "2002"
+
+        }
+        //Question no 2
+        console.log(car.model)
+        //Question no 3
+        car.year = "2005"
+        console.log(car.year)
+        //Question no 4
+        for (let key in car) {
+            if (car.hasOwnProperty(key)) {
+                console.log(`${key}: ${car[key]}`);
+            }
+        }
+        //Question no 5
+        let cars = [
+            {
+                color: "red",
+                model: "ferari",
+                year: "2002"
+            },
+            {
+                color: "yellow",
+                model: "ferari",
+                year: "2005"
+            },
+            {
+                color: "purple",
+                model: "ferari",
+                year: "2007"
+            }
+        ]
+        cars.forEach((cars, index) => {
+            console.log(`Car ${index + 1}:`);
+            for (let key in cars) {
+                if (cars.hasOwnProperty(key)) {
+                    console.log(`${key}: ${car[key]}`);
+                }
+            }
+            console.log("-------------------------");
+        });
+        //Question no 6
+        let person = {
+            name: "annoo",
+            lastname: "alla-ud-din",
+            adress: {
+                street: "20",
+                block: "b"
+            },
+            height: "5.2"
+        }
+        console.log(person)
+        //Question no 7
+
+        function describe() {
+            return `This car is a ${car.year} model ${car.model} in ${car.color} color.`;
+        }
+        console.log(describe())
+        //Question no 8
+        function Person(firstName, lastName, street, block, height) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.address = {
+                street: street,
+                block: block
+            };
+            this.height = height;
+        }
+
+        let person1 = new Person("John", "Doe", "123 Main St", "b", "5.2");
+        let person2 = new Person("Jane", "Smith", "456 Elm St", "b", "5.6");
+
+        // Logging the Person objects to the console
+        console.log(person1);
+        console.log(person2);
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  Question 1
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+        f = parseInt(prompt("enter a number to find:"));
+        let found = false;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === f) {
+                console.log("NUmber is find", f);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            console.log("number not find");
+        }
+        //Question 2
+        let arr1 = [1, 2, 3, 4, 5]
+        console.log("original array", arr1)
+        if (arr1.length > 2) {
+            let firstelement = arr1[0]
+            arr1[0] = arr1[(arr1.length) - 1]
+            arr1[(arr1.length) - 1] = firstelement
+            console.log("array after swapped", arr1)
+        }
+        //Question 3
+        let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        console.log("original array", arr2)
+
+        if (arr2.length === 0) {
+            console.log("array is empty")
+        }
+        let midlenumber = (arr2.length) / 2
+        arr2.splice(midlenumber, 1)
+        console.log("after deleted middle number", arr2)
+        //Question 4
+        let array = []
+        let arr3 = ['a', 'b', 'c']
+        array = Array.from(arr3)
+        console.log(array)
+        // Question 5
+        function createRange(start, end) {
+            let rangeArray = [];
+            for (let i = start; i <= end; i++) {
+                rangeArray.push(i);
+            }
+
+            return rangeArray;
+        }
+        let start = 2;
+        let end = 6;
+        console.log(createRange(start, end));
+        // Question 6
+        function largestThree(arr) {
+            arr.sort((a, b) => b - a);
+            return arr.slice(0, 3);
+        }
+        let array1 = [3, 1, 5, 2, 4];
+        console.log(largestThree(array));
+        // Question 7
+        function isSorted(arr) {
+            for (let i = 0; i < arr.length - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        let sortedArray = [1, 2, 3, 4, 5];
+        let unsortedArray = [5, 3, 1, 2, 4];
+        console.log(isSorted(sortedArray));
+        console.log(isSorted(unsortedArray));
+        // Question 8
+        function reorderArray(arr, indexes) {
+            let reorderedArray = new Array(arr.length);
+
+            for (let i = 0; i < arr.length; i++) {
+                reorderedArray[indexes[i]] = arr[i];
+            }
+
+            return reorderedArray;
+        }
+        let array6 = ['a', 'b', 'c', 'd'];
+        let indexes = [3, 1, 0, 2];
+
+        console.log(reorderArray(array, indexes));
+
+
+    </script>
+</body>
+
+</html>

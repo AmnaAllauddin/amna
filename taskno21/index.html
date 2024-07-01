@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz time</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- start quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <!-- info box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Some rules for this Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1.You have only <span>10 seconds</span> for each question.</div>
+            <div class="info">2.Once you select your answer,you can't reselect.</div>
+            <div class="info">3.You can't select any option once time goes off. </div>
+            <div class="info">4.You will get points on the basis of your correct answer.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time left</div>
+                <div class="timer_sec">10</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span> Artificial Intelligence is about_____.</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Playing a game on Computer</span>
+                </div>
+                <div class="option">
+                    <span>Making a machine Intelligent</span>
+                </div>
+                <div class="option">
+                    <span>Programming on Machine with your Own Intelligence</span>
+                </div>
+                <div class="option">
+                    <span>Putting your intelligence in Machine</span>
+                </div> -->
+            </div>
+        </section>
+        <!-- QUIZ FOOTER -->
+        <footer>
+            <div class="total_que">
+                <!-- <span> <p>2</p>of<p>10</p>Questions</span> -->
+            </div>
+            <button class="next_btn"> Next Question</button>
+        </footer>
+    </div>
+    <!-- result box  -->
+    <div class="result_box">
+        <div class="complete_text">
+            You have completed the Quiz.
+        </div>
+        <div class="score_text">
+            <!-- <span>and sorry you got only<p>2</p>out of <p>10</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class=" restart"> Restart quiz</button>
+            <button class=" quit"> Quit quiz</button>
+        </div>
+    </div>
+  <script src="./script.js"></script>
+  <script src="./question.js"></script>
+</body>
+
+</html>

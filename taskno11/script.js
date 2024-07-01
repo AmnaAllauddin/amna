@@ -1,35 +1,35 @@
-// question 1
+// Question 1
 var Name="amna";
-console.log( "question no 1 answer of print a string variable is :",Name);
-// question2
+console.log( "string variable is :",Name);
+// Question2
 var num1=1;
 var num2=45;
 var sum=num1+num2;
-console.log("question no 2 answer of sum is :",sum);
-// question3
+console.log("sum is :",sum);
+// Question3
 const PI=3.14159;
 var radius=5;
 var areaCircle=PI*radius*radius;
-console.log("question no 3 answer of areacircle is:",areaCircle);
-// question4
+console.log("area of circle is:",areaCircle);
+// Question 4
 var num=prompt("enter a number:")
 if(num>0)
- console.log("question no 4 answer of  condition statement num is positive:",num) 
+ console.log("num is positive:",num) 
 else if(num<0)
- console.log("question no 4 answer of   condition statement  num is negative:",num) 
+ console.log("num is negative:",num) 
 else if(num!=0)
-console.log(" question no 4 answer of  condition statement  not a number charachter:",num)
+console.log(" Not a number charachter:",num)
 else
 console.log("number is zero:",num)
-// question5
+// Question 5
 var i=0;
 while(i<=10){
-    console.log("question no 5 answer of while loop is:",i)
+    console.log("while loop",i)
   i++;
 }
-// questionno6
+// Questionno6
 var i=0;
 for(i;i<=10;i++)
-console.log("question no 6 answer of for loop is:",i)
+console.log("for loop is:",i)
 
 

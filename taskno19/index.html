@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #DA8F8C;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+
+    }
+
+    #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20%;
+    }
+
+    .textam {
+        height: auto;
+        width: auto;
+    }
+
+    .outer {
+        height: 5rem;
+        width: 20rem;
+        position: relative;
+    }
+
+    .outer img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 45%;
+        transition: opacity 0.3s ease;
+    }
+
+    .inner {
+        height: 2rem;
+        width: 2rem;
+        margin: -22% 0%;
+        padding: 2.5%;
+        background-color: #F5D0B8;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        transition: left 0.3s ease, background-color 0.3s ease;
+    }
+
+    .textpm {
+        height: auto;
+        width: auto;
+
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div class="textam">
+            <h1>AM</h1>
+        </div>
+        <div class="outer">
+            <img src="./morning.jpg" alt="morning image" id="morning">
+            <div class="inner"></div>
+        </div>
+        <div class="textpm">
+            <h1>PM</h1>
+        </div>
+    </div>
+
+    <script>
+        var elements = document.getElementsByClassName('inner')
+        let isnight = false
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].addEventListener('click', toggle);
+        }
+        function toggle() {
+            isnight = !isnight
+            if (isnight) {
+                over.call(this)
+            }
+            else {
+                back.call(this)
+            }
+
+        }
+        function over() {
+            this.style.backgroundColor = "#ABAFE5"
+            document.body.style.backgroundColor = "#ABAFE5"
+            this.style.left = "85%"
+            let img = document.getElementById('morning')
+            img.style.opacity = 0
+            setTimeout(function () {
+                img.src = "./night1.jpg";
+                img.style.opacity = 1
+            }, 300)
+        }
+
+        function back() {
+            this.style.backgroundColor = "#DA8F8C"
+            document.body.style.backgroundColor = "#DA8F8C"
+            this.style.left = "0%"
+                let img = document.getElementById('morning')
+                img.style.opacity = 0
+                setTimeout(function () {
+                    img.src = "./morning.jpg";
+                    img.style.opacity = 1
+                }, 300)
+        }
+
+    </script>
+</body>
+
+</html>
