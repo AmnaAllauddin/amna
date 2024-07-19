@@ -1,0 +1,19 @@
+*{
+    background: black;
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    display:flex;
+    align-content: center;
+    justify-content:space-between;
+    height:30rem;
+    width:17rem ;
+    background-color: aliceblue;
+    margin: 8% 38% ;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(68, 68, 68);
+    box-shadow: 3px 3px 3px 5px  rgb(58, 54, 54);
+}
