@@ -4,6 +4,7 @@
     background-color: #f7f7f7;
     box-sizing: border-box;
     font-family: 'Courier New';
+    overflow: hidden;
 
 }
  
@@ -11,7 +12,7 @@
 display: flex;
 align-items: center;
 justify-content: center;
-font-family: bolder;
+font-weight: bolder;
 font-style: oblique;
 font-size: 5rem;
 position: relative;
@@ -31,14 +32,16 @@ color: #93d8a4;
     position: absolute;
     z-index: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 10px;
     align-items: center;
-    justify-items:center ;
-    margin: 5% 35%;
+    margin: 10% 30%;
     background: none;
 }
 .input input{
+    outline: none;
+    display: flex;
+    flex-direction: row;
     background: none;
     border: 2px solid #526e58;
     border-radius: 0.2em;
@@ -48,21 +51,25 @@ color: #93d8a4;
     box-shadow: 3px 2px 3px 0.5px #b8cfbe;
 
 }
- .input label{
-
-    font-weight: bolder;
+.input select{
     background: none;
     border: none;
-    color: #5d9b6c;
-    font-size: 2rem;
+    outline: none;
+    width:20rem ;
+    border: 2px solid #526e58;
+
 }
+ 
  button{
+   
+    display: flex;
+    align-items: center;
     background-color: #6bee8b;
-    padding: 5%;
+    padding: 2%;
     font-size: large;
     color:#50835d;
     border: 2px solid #526e58;
-    width: 80%;
+    width: 50%;
     border-radius: 14% 5%;
     box-shadow: 3px 3px 2px 1px #b8cfbe;
    

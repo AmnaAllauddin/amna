@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
     <div class="text">Currency Converter</div>
     <div class="container">
-        
+
         <div class="input">
-            <label for="convertFrom">From</label>
             <input type="number" placeholder="1" id="convertFrom">
-            <button id="button">Convert</button>
-            <label for="convertTo">To</label>
+            <select name="" id="selectTo"></select>
             <input type="number" placeholder="1" id="convertTo">
+            <select name="" id="selectFrom"></select>
+
+            <button id="button">Convert</button>
+
         </div>
     </div>
-    <div id="result"></div>
-    <script src="./script.js"></script>
+   
 </body>
+
 </html>
