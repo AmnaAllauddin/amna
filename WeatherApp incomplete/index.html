@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather App</title>
+    <title>Weather App</title>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container">
+        <input type="text" id="cityInput" placeholder="Enter city" />
+        <button id="searchButton">Search</button>
+        <div class="weather-info" id="weatherInfo" style="display: none;">
+            <h2 class="location">Location</h2>
+            <p class="temperature">Temperature: -- °C</p>
+            <p class="description">Weather: --</p>
+            <i class="material-icons weather-icon">wb_sunny</i>
+            <p class="time">Time: --:--</p>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
+
+
+ 
+
+ 
+ 
